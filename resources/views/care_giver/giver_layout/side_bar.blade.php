@@ -104,6 +104,9 @@
 
   let sidebar = document.querySelector(".sidebar");
   let sidebarBtn = document.querySelector(".side_arrow");
+
+  sidebar.classList.remove("close");
+
   sidebarBtn.addEventListener("click", () => {
     console.log('clicked');
     sidebar.classList.toggle("close");

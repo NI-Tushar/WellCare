@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-  --skin-color-1:rgb(49, 129, 97);
+  --skin-color-1:rgb(33, 185, 182);
+  /* --skin-color-1:rgb(49, 129, 97); */
   --white-color:aliceblue;
   --dark-black:black;
   --dim-black-color:rgba(0, 0, 0, 0.55);
