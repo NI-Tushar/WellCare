@@ -36,9 +36,7 @@
     -webkit-appearance: none;
     margin: 0;
 }
-.otp-input input[type=number] {
-    -moz-appearance: textfield;
-}
+
 
 
 .otp_section .otp_text{
