@@ -1,0 +1,423 @@
+.giver_jobs {
+    width: 100%;
+}
+.giver_jobs .giver_jobs_heading{
+    max-width: 75rem;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.giver_jobs p{
+    color: rgba(0, 0, 0, 0.505);
+    font-size: 15px;
+}
+
+.jobs_card {
+    padding-top: 20px;
+    width: 100%;
+    display: grid;    
+    grid-template-columns: 1fr minmax(300px, 75rem) 1fr;
+}
+
+.jobs_card .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 35rem));
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 20px;           
+}
+
+
+.jobs_card .cards .card {
+    margin: auto;
+    height: auto;
+    width: 95%;
+    position: relative;
+    margin-top: 5px;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 200ms ease-in;
+    border: none;
+    transition: transform 1.0s; 
+    background-color: transparent;
+    padding: 15px;
+    transition: transform 250ms;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+.jobs_card .cards .card .post_num_div{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 25px;
+    text-align: center;
+    margin: auto;
+    height: 30px;
+    background-color: var(--skin-color-1);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.jobs_card .cards .card .post_num_div p{
+    color: var(--white-color);
+    margin-top: 2px;
+}
+
+.jobs_card .cards .card:hover{
+    box-shadow: var(--skin-color-1) 0px 3px 8px;
+    /* transform: translateY(-10px); */
+}
+
+.jobs_body .top_icon{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+.jobs_body .top_icon i{
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.574);
+    cursor: pointer;
+}
+.jobs_body .top_icon i:hover{
+    color: black;
+}
+.jobs_body .job_heading{
+    display: flex;
+    height: auto;
+}
+.jobs_body .job_heading .giver_img{
+    height: 100%;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.jobs_body .job_heading .giver_img img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.jobs_body .job_heading .job_title{
+    padding-left: 10px;
+}
+.jobs_body .job_heading .job_title h3{
+    font-size: 14px;
+}
+.jobs_body .job_heading .job_title p{
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.746);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 600;
+}
+.jobs_body .job_heading .job_title p i{
+    margin-right: 3px;
+}
+.jobs_body .job_heading .job_title ul{
+    display: flex;
+}
+.jobs_body .job_heading .job_title ul li{
+    list-style: none;
+    margin-right: 3px;
+}
+.jobs_body .job_heading .job_title ul li i{
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(234, 205, 52);
+}
+
+
+.jobs_body .gen_amnt{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.jobs_body .gen_amnt p{
+    margin-right: 10%;
+    font-size: 13px;
+    font-weight: 600    ;
+}
+.jobs_body .gen_amnt p i{
+    margin-right: 5px   ;
+}
+
+
+.jobs_body .jobs_desc{
+    padding-bottom: 10px;
+}
+.jobs_body .jobs_desc p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.763);
+}
+.jobs_body button{
+    border: 1px solid rgba(0, 0, 0, 0.763);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.655);
+    padding: 5px;
+    background: transparent;
+}
+.jobs_body button:hover{
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+.jobs_body .accept_button{
+    padding-top: 15px;
+}
+.jobs_body .accept_button button{
+    border: none;
+    width: 100%;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: var(--white-color);
+    background-color: var(--skin-color-1);
+}
+.jobs_body .accept_button button:hover{
+    background-color: crimson;
+}
+
+
+
+.jobs_body .bottom_icon{
+    display: flex;
+    padding-top: 15px;
+}
+.jobs_body .bottom_icon .ago,
+.jobs_body .bottom_icon .view{
+    width: 50%;
+}
+.jobs_body .bottom_icon .ago p,
+.jobs_body .bottom_icon .view p{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.745);
+}
+.jobs_body .bottom_icon .view p{
+    text-align: right;
+}
+.jobs_body .bottom_icon .ago p i,
+.jobs_body .bottom_icon .view p i{
+    margin-right: 5px;
+}
+
+/* ___________________________________ Accept div start */
+.accept_div{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* display: flex; */
+}
+.accept_div .acc_centered_div{
+    max-width: 450px;
+    height: auto;
+    background-color: aliceblue;
+    margin:auto;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+.acc_centered_div i{
+    color: rgba(0, 0, 0, 0.541);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.acc_centered_div i:hover{
+    color: black;
+}
+.accept_div .acc_centered_div h2{
+    text-align: center;
+}
+.accept_div .acc_centered_div .fee_desc{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+.accept_div .acc_centered_div .fee_desc .fee_part{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.accept_div .acc_centered_div .fee_desc .fee_part i{
+    position:absolute;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.541);
+}
+.accept_div .acc_centered_div .fee_desc .fee_part i:hover{
+    color: black;
+}
+
+.accept_div .acc_centered_div .fee_desc .fee_part p{
+    text-align: center;
+    width: 100%;
+}   
+.accept_div .acc_centered_div .fee_desc .fee_part{
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.accept_div .acc_centered_div .fee_desc .fee_part .fee1{
+    font-size: 13px;
+    font-weight: 600;
+    width: 85%;
+}
+.accept_div .acc_centered_div .fee_desc .fee_part .fee2{
+    font-size: 15px;
+    font-weight: 700;
+}
+.accept_div .acc_centered_div .fee_desc .fee_part .fee3{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.656);
+}
+
+
+.acc_centered_div .acc_text{
+    display: flex;
+    padding-top: 5px;
+}
+.acc_centered_div .acc_text .text_part p{
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.737);
+}
+
+.acc_centered_div .acc_text .check{
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.acc_centered_div .acc_text .check input{
+    height: 17px;
+    width: 17px;
+    accent-color: var(--skin-color-1);
+}
+
+
+.acc_centered_div input[type="submit"]{
+    background-color: var(--skin-color-1);
+    width: 100%;
+    border: none;
+    color: aliceblue;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+}
+
+.acc_centered_div input[type="submit"]:hover{
+    background-color: crimson;
+}
+
+
+/* ___________________________________ Accepted div start */
+.accepted_div{
+    background-color: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.accepted_div .accepted_centered_div{
+    max-width: 450px;
+    height: auto;
+    background-color: aliceblue;
+    margin:auto;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.accepted_centered_div i{
+    color: rgba(0, 0, 0, 0.541);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.accepted_centered_div i:hover{
+    color: black;
+}
+.accepted_div .accepted_centered_div h2{
+    text-align: center;
+    color: var(--skin-color-1);
+}
+
+
+.accepted_centered_div  p{
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.737);
+    text-align: center;
+    padding: 30px;
+}
+
+
+.accepted_centered_div button{
+    background-color: var(--skin-color-1);
+    width: 100%;
+    border: none;
+    color: aliceblue;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+}
+
+.accepted_centered_div button:hover{
+    background-color: crimson;
+}
+
+
+
+
+
+/* ______________________ */
+.jobs_body .request_button{
+    padding-top: 15px;
+    display: flex;
+    gap:10px;
+}
+.jobs_body .request_button button{
+    border: none;
+    width: 50%;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    border: 1px solid var(--skin-color-1);
+}
+.jobs_body .request_button button:hover{
+    background-color: var(--skin-color-1);
+    color: var(--white-color);
+}
+/* ______________________ */

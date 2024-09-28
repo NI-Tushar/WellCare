@@ -1,0 +1,97 @@
+
+.otp_section{
+    padding-top: 15px;
+} 
+.sign_up_opt_section .centered_option .otp_section h4{
+    text-align: center;
+}
+
+
+.otp-input {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.otp-input input {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid #6665F1;
+    border-radius: 12px;
+    /* background-color: rgba(42, 42, 42, 0.8); */
+    background-color: var(--white-color);
+    color: #000000;
+    transition: all 0.3s ease;
+}
+.otp-input input:focus {
+    border-color: #A556F6;
+    box-shadow: 0 0 0 2px rgba(166, 86, 246, 0.3);
+    outline: none;
+}
+.otp-input input::-webkit-outer-spin-button,
+.otp-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.otp-input input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.otp_section .otp_text{
+    max-width: 300px;
+    margin: auto;
+}
+
+.otp_section .otp_text p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.689);
+    padding-bottom: 5px;
+}
+.otp_section .otp_text p .time{
+    color: red;
+}
+.otp_section .otp_text p a{
+    text-decoration: underline;
+    background-color: transparent;
+    color: #ec7c7c;
+}
+
+
+
+.otp_section .location_sec{
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.otp_section .location_sec h4{
+    padding-bottom:20px;
+
+}
+
+.otp_section .location{
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.otp_section i{
+    position: absolute;
+    right: 10px;
+    bottom:46px;
+    font-size: 20px;
+    color: #000000a0;   
+    cursor: pointer;
+}
+.otp_section i:hover{
+    color: var( --text-heighlight);
+}
