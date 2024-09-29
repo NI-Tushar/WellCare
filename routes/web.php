@@ -3,12 +3,16 @@ use App\Http\Controllers\MyController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\careGiverController;
 use App\Http\Controllers\careTakerController;
+use App\Http\Controllers\proGiverController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
 
 Route::get('/',[MyController::class,'index']);  
 Route::get('/contact-us/wellcare',[MyController::class,'contact_page']);
+
+// ____________________________________ Login
+Route::get('/user/log-in/',[UsersController::class,'login_up_page']);
 
 // ____________________________________ signup
 Route::get('/user/sign-up',[UsersController::class,'sign_up']);
@@ -17,6 +21,8 @@ Route::post('/user/user-id/pass/sign-up',[UsersController::class,'create_user_cr
 // ________________ care giver
 Route::get('/user/care-giver/otp/varification',[UsersController::class,'care_giver_otp']);
 Route::get('/user/care-giver/location',[UsersController::class,'care_giver_location']);
+
+Route::get('/care-giver/upgrade-plan/pro/',[proGiverController::class,'care_giver_pro_plan']);
 
 // ________________ care taker
 Route::get('/user/care-taker/otp/varification',[UsersController::class,'care_taker_otp']);

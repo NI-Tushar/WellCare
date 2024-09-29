@@ -35,7 +35,7 @@
             <ul class="links">
                 <li><a class='active'  href="{{url('/')}}">Home</a></li>
                 <li><a href="{{url('/contact-us/wellcare')}}">Contact Us</a></li>
-                <li><a href="#">Pro-Care Giverr</a></li>
+                <li><a href="{{url('/care-giver/upgrade-plan/pro/')}}">Pro-Care Giver</a></li>
             </ul>
 
             <div class="noti_lang">

@@ -27,7 +27,7 @@
                             </div>
                             <div class="col-50">
                                 <label for="zip">NID Picture</label>
-                                <input type="file" id="zip" name="zip" placeholder="10001">
+                                <input type="file" id="zip" name="zip">
                             </div>
                         </div>
 
@@ -43,7 +43,7 @@
                             </div>
                             <div class="col-50">
                                 <label for="zip">Address</label>
-                                <input type="file" id="zip" name="zip" placeholder="10001">
+                                <input type="text" id="zip" name="zip">
                             </div>
                         </div>
 
@@ -54,7 +54,7 @@
                             </div>
                             <div class="col-50">
                                 <label for="zip">NID Picture</label>
-                                <input type="file" id="zip" name="zip" placeholder="10001">
+                                <input type="file" id="zip" name="zip">
                             </div>
                         </div>
                         <!-- _______________________________________________________ -->

@@ -1,0 +1,50 @@
+.pro_plan_section{
+    border: 2px solid red;
+    height: auto;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+
+.pro_plan_card {
+    padding-top: 20px;
+    width: 100%;
+    display: grid;    
+    grid-template-columns: 1fr minmax(300px, 75rem) 1fr;
+}
+
+.pro_plan_card .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem));
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 20px;           
+    border: 2px solid red;
+}
+
+
+.pro_plan_card .cards .card {
+    margin: auto;
+    height: 600px;
+    width: 95%;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 200ms ease-in;
+    border: none;
+    transition: transform 1.0s; 
+    background-color: transparent;
+    padding: 30px;
+    transition: transform 250ms;
+    border: 1px solid black;
+}
+.pro_plan_card .cards .card .pro_body{
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+
+}

@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {    
+    public function login_up_page(){
+        return view('layouts/login');
+    }
     public function sign_up(){
         return view('sign_up_pages/sign_up');
     }

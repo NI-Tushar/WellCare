@@ -47,7 +47,7 @@
                 <li><a href="#">Drop Menu 3</a></li>
             </ul>
             </li>  -->
-            <li><a href="" class="nav-login">Sign In</a></li>
+            <li><a href="{{url('/user/log-in/')}}" class="nav-login">Sign In</a></li>
             <li><a class="nav-sign_up" href="{{url('/user/sign-up')}}">Sign Up</a></li>
         </ul>
         </div>
