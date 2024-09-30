@@ -1,6 +1,6 @@
 @extends('layouts.middle')
 @push('title')
-<title>Contact Us | WellCare</title>
+<title>{{GoogleTranslate::trans('Contact Us', app()->getLocale())}} | WellCare</title>
 @endpush
 
 
@@ -17,9 +17,12 @@
   <div class="centered_banner">
     <div class="banner">
       <div class="banner_text">
-        <h1>Get in Touch with Us</h1>
-        <p>We’re here to assist you with any questions or concerns. Whether you need support with your loan application or have inquiries about our services, feel free to reach out. Our team is dedicated to providing prompt and helpful responses to ensure your needs are met.</p>
-        <a href=""><button>Book a Meeting</button></a>
+        <h1>{{GoogleTranslate::trans('Get in Touch with Us', app()->getLocale())}}</h1>
+        <p>{{GoogleTranslate::trans(' We’re here to assist you with any questions or concerns. Whether you need support with your 
+          loan application or have inquiries about our services, 
+          feel free to reach out. Our team is dedicated to providing prompt and helpful responses to ensure your needs are met.', app()->getLocale())}}
+         </p>
+        <a href=""><button>{{GoogleTranslate::trans('Book a Meeting', app()->getLocale())}}</button></a>
       </div>
     </div>
     <div class="banner">
@@ -36,25 +39,27 @@
     <div class="banner">
       <div class="email_side">
         <img src="{{url('resource/images/contact/contact_img.png')}}" alt="">
-        <p>FinWise makes loan applications easy. Submit your form, connect with banks and corporations, and track your loan status effortlessly. Quick approvals and tailored solutions to help you reach your financial goals.</p>
+        <p>{{GoogleTranslate::trans(' FinWise makes loan applications easy. Submit your form, connect with banks and corporations, 
+          and track your loan status effortlessly. Quick approvals and tailored solutions to help you reach your financial goals.', app()->getLocale())}}
+         </p>
       </div>
     </div>
     <div class="banner">
       <div class="email_form">
         <form action="">
-          <label for="">Your name</label>
+          <label for="">{{GoogleTranslate::trans('Name', app()->getLocale())}}</label>
           <br>
           <input type="text">
           <br>
-          <label for="">Phone Number</label>
+          <label for="">{{GoogleTranslate::trans('Phone Number', app()->getLocale())}}</label>
           <br>
           <input type="text">
           <br>
-          <label for="">Email Address</label>
+          <label for="">{{GoogleTranslate::trans('Email Address', app()->getLocale())}}</label>
           <br>
           <input type="email" name="" id="">
           <div class="submit_btn">
-            <input type="submit" value="Send">
+            <input type="submit" value="{{GoogleTranslate::trans('Send', app()->getLocale())}}">
           </div>
         </form>
       </div>

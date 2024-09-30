@@ -59,8 +59,7 @@ body{
   color: var(--skin-color-1);
   cursor: pointer;
 }
-/* _________________________________ language switcher */
-
+/* _________________________________ language switcher */ 
 .switch {
   margin-top: auto;
   margin-bottom: auto;
@@ -166,7 +165,7 @@ input.check-toggle-round-flat + label:after {
 
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 57.5px;
-}
+} 
 /* _________________________________ language switcher */
 
 

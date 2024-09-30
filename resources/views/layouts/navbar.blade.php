@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="https://kit.fontawesome.com/5f7bc44e9f.js" crossorigin="anonymous"></script> 
 
@@ -35,7 +36,7 @@
         <ul class="links">
             <li><a class='active'  href="{{url('/')}}">Home</a></li>
             <li><a href="{{url('/contact-us/wellcare')}}">Contact Us</a></li>
-            <li><a href="#">Pro-Care Giverr</a></li>
+            <li><a href="{{url('/care-giver/upgrade-plan/pro/')}}">Pro-Care Giverr</a></li>
             <li><a href="#">Pro-Care Taker</a></li>
             <!-- <li>
             <a href="#" class="desktop-link">Services <i class="fa-solid fa-angle-down"></i></a>
@@ -49,9 +50,26 @@
             </li>  -->
             <li><a href="{{url('/user/log-in/')}}" class="nav-login">Sign In</a></li>
             <li><a class="nav-sign_up" href="{{url('/user/sign-up')}}">Sign Up</a></li>
+            <li>
+                <select class="form-select changeLang">
+                    <option value="en">English</option>
+                    <option value="bn">Bangla</option>
+                </select>
+            </li>
         </ul>
         </div>
     </div>
     </div>
 
 </body>
+<!-- <script type="text/javascript">
+    var url = "{{ route('changeLang') }}";
+    $(".changeLang").change(function(){
+        window.location.href = url + "?lang="+ $(this).val();
+    });
+</script>
+
+<select class="form-select changeLang">
+    <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+    <option value="bn" {{ session()->get('locale') == 'bn' ? 'selected' : '' }}>Bangla</option>
+</select> -->

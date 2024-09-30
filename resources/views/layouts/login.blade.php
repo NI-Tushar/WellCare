@@ -45,7 +45,7 @@
             </div>
 
             <div class="sign_up_div">
-                <p>Don't have an account?<a href="">Sign Up</a></p>
+                <p>Don't have an account?<a href="{{url('/user/sign-up')}}">Sign Up</a></p>
             </div>
         
 

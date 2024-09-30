@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="{{url('style/css/giver_jobs.css')}}">
 <div class="giver_jobs">
     <div class="giver_jobs_heading">
-        <h3>Care Giver Jobs</h3>
-        <p>Find the perfect care recipient that matches your skills and expertise.</p>
+        <h3>{{GoogleTranslate::trans('Care Giver Jobs', app()->getLocale())}}</h3>
+        <p>{{GoogleTranslate::trans('Find the perfect care recipient that matches your skills and expertise.', app()->getLocale())}}</p>
     </div>
 </div>
 
@@ -15,250 +15,70 @@
     <div class="cards">
         
 <!-- __________________________________________________ -->
+        @for ($i = 0; $i < 5; $i++)
         <div class="card">
-            <div class="jobs_body">
+                    <div class="jobs_body">
 
-                <div class="top_icon">
-                    <a href=""><i class="fa-solid fa-circle-info"></i></a>
-                    <a href=""><i class="fa-solid fa-share"></i></a>
-                </div>
+                        <div class="top_icon">
+                            <a href=""><i class="fa-solid fa-circle-info"></i></a>
+                            <a href=""><i class="fa-solid fa-share"></i></a>
+                        </div>
 
-                <div class="job_heading">
-                    <div class="giver_img">
-                        <img src="{{url('/resource/images/giver_jobs/1.png')}}" alt="">
+                        <div class="job_heading">
+                            <div class="giver_img">
+                                <img src="{{url('/resource/images/giver_jobs/1.png')}}" alt="">
+                            </div>
+                            <div class="job_title">
+                                <h3>{{GoogleTranslate::trans('Looking for a Caring Maid for Daily Assistance', app()->getLocale())}}</h3>
+                                <p>Ovie Rahman Sheikh</p>
+                                <p><i class="fa-solid fa-location-dot"></i>{{GoogleTranslate::trans('Mohalkhali, DOHS, Dhaka 1207', app()->getLocale())}}</p>
+                                <p><i class="fa-regular fa-clock"></i>{{GoogleTranslate::trans('12:00 PM - 4:00 PM', app()->getLocale())}}</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="gen_amnt">
+                            <p><i class="fa-solid fa-restroom"></i><Span>{{GoogleTranslate::trans('Female', app()->getLocale())}}</Span></p>
+                            <p><i class="fa-solid fa-bangladeshi-taka-sign"></i><span>{{GoogleTranslate::trans('12,000', app()->getLocale())}}</span></p>
+                        </div>
+
+                        <div class="jobs_desc">
+                            <p>{{GoogleTranslate::trans('We provide safe, nurturing environments for children of all ages. Each child 
+                                receives personalized attention to foster their growth and development through play, 
+                                education, and care.', app()->getLocale())}}</p>
+                        </div>
+
+                        <a href=""><button>{{GoogleTranslate::trans('Patient Care', app()->getLocale())}}</button></a>
+
+                        <div class="accept_button">
+                            <button onclick="show_accept()">{{GoogleTranslate::trans('Accept This Request', app()->getLocale())}}</button>
+                        </div>
+
+
+                        <div class="bottom_icon">
+                            <div class="ago">
+                                <p><i class="fa-solid fa-calendar-days"></i><span>{{GoogleTranslate::trans('1 Days Ago', app()->getLocale())}}</span></p>
+                            </div>
+                            <div class="view">
+                                <p><i class="fa-solid fa-eye"></i><span>{{GoogleTranslate::trans('322', app()->getLocale())}}</span></p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="job_title">
-                        <h3>Looking for a Caring Maid for Daily Assistance</h3>
-                        <p>Ovie Rahman Sheikh</p>
-                        <p><i class="fa-solid fa-location-dot"></i>Mohalkhali, DOHS, Dhaka 1207</p>
-                        <p><i class="fa-regular fa-clock"></i>12:00 PM - 4:00 PM</p>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
                 </div>
+        @endfor
 
-                <div class="gen_amnt">
-                    <p><i class="fa-solid fa-restroom"></i><Span>Female</Span></p>
-                    <p><i class="fa-solid fa-bangladeshi-taka-sign"></i><span>12,000</span></p>
-                </div>
-
-                <div class="jobs_desc">
-                    <p>We provide safe, nurturing environments for children of all ages. Each child 
-                        receives personalized attention to foster their growth and development through play, 
-                        education, and care.</p>
-                </div>
-
-                <a href=""><button>Patient Care</button></a>
-
-                <div class="accept_button">
-                    <button onclick="show_accept()">Accept This Request</button>
-                </div>
-
-
-                <div class="bottom_icon">
-                    <div class="ago">
-                        <p><i class="fa-solid fa-calendar-days"></i><span>1 Days Ago</span></p>
-                    </div>
-                    <div class="view">
-                        <p><i class="fa-solid fa-eye"></i><span>322</span></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        
         <!-- __________________________________________________ -->
     
                            
 
-            
-<!-- __________________________________________________ -->
-<div class="card">
-            <div class="jobs_body">
-
-                <div class="top_icon">
-                    <a href=""><i class="fa-solid fa-circle-info"></i></a>
-                    <a href=""><i class="fa-solid fa-share"></i></a>
-                </div>
-
-                <div class="job_heading">
-                    <div class="giver_img">
-                        <img src="{{url('/resource/images/giver_jobs/2.png')}}" alt="">
-                    </div>
-                    <div class="job_title">
-                        <h3>Looking for a Caring Maid for Daily Assistance</h3>
-                        <p>Ovie Rahman Sheikh</p>
-                        <p><i class="fa-solid fa-location-dot"></i>Mohalkhali, DOHS, Dhaka 1207</p>
-                        <p><i class="fa-regular fa-clock"></i>12:00 PM - 4:00 PM</p>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="gen_amnt">
-                    <p><i class="fa-solid fa-restroom"></i><Span>Female</Span></p>
-                    <p><i class="fa-solid fa-bangladeshi-taka-sign"></i><span>12,000</span></p>
-                </div>
-
-                <div class="jobs_desc">
-                    <p>We provide safe, nurturing environments for children of all ages. Each child 
-                        receives personalized attention to foster their growth and development through play, 
-                        education, and care.</p>
-                </div>
-
-                <a href=""><button>Patient Care</button></a>
-
-                <div class="accept_button">
-                    <a href=""><button>Accept This Request</button></a>
-                </div>
-
-
-                <div class="bottom_icon">
-                    <div class="ago">
-                        <p><i class="fa-solid fa-calendar-days"></i><span>1 Days Ago</span></p>
-                    </div>
-                    <div class="view">
-                        <p><i class="fa-solid fa-eye"></i><span>322</span></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- __________________________________________________ -->
-    
-                           
-
-            
-<!-- __________________________________________________ -->
-<div class="card">
-            <div class="jobs_body">
-
-                <div class="top_icon">
-                    <a href=""><i class="fa-solid fa-circle-info"></i></a>
-                    <a href=""><i class="fa-solid fa-share"></i></a>
-                </div>
-
-                <div class="job_heading">
-                    <div class="giver_img">
-                        <img src="{{url('/resource/images/giver_jobs/3.png')}}" alt="">
-                    </div>
-                    <div class="job_title">
-                        <h3>Looking for a Caring Maid for Daily Assistance</h3>
-                        <p>Ovie Rahman Sheikh</p>
-                        <p><i class="fa-solid fa-location-dot"></i>Mohalkhali, DOHS, Dhaka 1207</p>
-                        <p><i class="fa-regular fa-clock"></i>12:00 PM - 4:00 PM</p>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="gen_amnt">
-                    <p><i class="fa-solid fa-restroom"></i><Span>Female</Span></p>
-                    <p><i class="fa-solid fa-bangladeshi-taka-sign"></i><span>12,000</span></p>
-                </div>
-
-                <div class="jobs_desc">
-                    <p>We provide safe, nurturing environments for children of all ages. Each child 
-                        receives personalized attention to foster their growth and development through play, 
-                        education, and care.</p>
-                </div>
-
-                <a href=""><button>Patient Care</button></a>
-
-                <div class="accept_button">
-                    <a href=""><button>Accept This Request</button></a>
-                </div>
-
-
-                <div class="bottom_icon">
-                    <div class="ago">
-                        <p><i class="fa-solid fa-calendar-days"></i><span>1 Days Ago</span></p>
-                    </div>
-                    <div class="view">
-                        <p><i class="fa-solid fa-eye"></i><span>322</span></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- __________________________________________________ -->
-    
-                           
-
-            
-<!-- __________________________________________________ -->
-<div class="card">
-            <div class="jobs_body">
-
-                <div class="top_icon">
-                    <a href=""><i class="fa-solid fa-circle-info"></i></a>
-                    <a href=""><i class="fa-solid fa-share"></i></a>
-                </div>
-
-                <div class="job_heading">
-                    <div class="giver_img">
-                        <img src="{{url('/resource/images/giver_jobs/1.png')}}" alt="">
-                    </div>
-                    <div class="job_title">
-                        <h3>Looking for a Caring Maid for Daily Assistance</h3>
-                        <p>Ovie Rahman Sheikh</p>
-                        <p><i class="fa-solid fa-location-dot"></i>Mohalkhali, DOHS, Dhaka 1207</p>
-                        <p><i class="fa-regular fa-clock"></i>12:00 PM - 4:00 PM</p>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="gen_amnt">
-                    <p><i class="fa-solid fa-restroom"></i><Span>Female</Span></p>
-                    <p><i class="fa-solid fa-bangladeshi-taka-sign"></i><span>12,000</span></p>
-                </div>
-
-                <div class="jobs_desc">
-                    <p>We provide safe, nurturing environments for children of all ages. Each child 
-                        receives personalized attention to foster their growth and development through play, 
-                        education, and care.</p>
-                </div>
-
-                <a href=""><button>Patient Care</button></a>
-
-                <div class="accept_button">
-                    <a href=""><button>Accept This Request</button></a>
-                </div>
-
-
-                <div class="bottom_icon">
-                    <div class="ago">
-                        <p><i class="fa-solid fa-calendar-days"></i><span>1 Days Ago</span></p>
-                    </div>
-                    <div class="view">
-                        <p><i class="fa-solid fa-eye"></i><span>322</span></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- __________________________________________________ -->
-    
      
     
     </div>

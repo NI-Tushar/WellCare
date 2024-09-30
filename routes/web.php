@@ -4,9 +4,11 @@ use App\Http\Controllers\UsersController;
 use App\Http\Controllers\careGiverController;
 use App\Http\Controllers\careTakerController;
 use App\Http\Controllers\proGiverController;
+use App\Http\Controllers\LangController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
+Route::get('/change/language/eng-ban',[LangController::class,'change_lang'])->name('changeLang');
 
 Route::get('/',[MyController::class,'index']);  
 Route::get('/contact-us/wellcare',[MyController::class,'contact_page']);
@@ -46,6 +48,9 @@ Route::get('/taker-profile/care-taker/',[careTakerController::class,'taker_profi
 
 
 // _______________________________ session data
+Route::get('set_session_data',function(Request $req){
+    session()->put('locale','bn');
+});
 Route::get('all_cart_data',function(Request $req){
     // return view('/products/pro_desc/checkout/checkout')->with($sess_data);
     // print_r(session()->get('1  Custom Gmail Accounts'));
@@ -64,12 +69,18 @@ Route::get('all_cart_data',function(Request $req){
         
         // foreach(Session::all() as $key => $obj):
         //     if($key!=='_token' && $key!=='_flash' && $key!='_previous'){
-        //         echo "<pre>";
+            //         echo "<pre>";
         //         echo $key . ": ";
         //         print_r($obj);
         //         echo "<pre>";
         //     }
         // endforeach;
+
+    //      @if(session('locale') == 'en')
+    //     {{"english"}}
+    //     @else
+    //     {{"bangla"}}
+    //  @endif
 
     }); 
 
